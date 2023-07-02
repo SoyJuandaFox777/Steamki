@@ -77,7 +77,7 @@ def Account_Check(Login, Password):
 
     # Reading proxies from proxies.txt and creating string for random choosing proxy and random choosing proxy for retry request
     Proxies = []
-    with open('PUT YOUR PATH TO proxies.txt', 'r') as f:
+    with open('/storage/emulated/0/Download/Telegram/http_proxies.txt', 'r') as f:
         for line in f:
             line = line.strip()
             if line.startswith('http://'):
@@ -438,4 +438,4 @@ if __name__ == '__main__':
     num_threads = int(input(Fore.YELLOW + Style.BRIGHT + "Enter number of threads: "))
 
     # call process_combo_file function with file path and num_threads
-    process_combo_file('PUT YOUR PATH TO combos.txt', num_threads)
+    process_combo_file('/storage/emulated/0/culin.txt', num_threads)
