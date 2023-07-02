@@ -77,7 +77,7 @@ def Account_Check(Login, Password):
 
     # Reading proxies from proxies.txt and creating string for random choosing proxy and random choosing proxy for retry request
     Proxies = []
-    with open('/storage/emulated/0/Download/Telegram/http_proxies.txt', 'r') as f:
+    with open('/storage/emulated/0/Download/Telegram/proxies.txt', 'r') as f:
         for line in f:
             line = line.strip()
             if line.startswith('http://'):
